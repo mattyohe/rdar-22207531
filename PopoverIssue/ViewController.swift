@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let popPC = segue.destinationViewController.popoverPresentationController!
+        popPC.backgroundColor = UIColor.redColor()
+        
+    }
 
 }
 
